@@ -226,3 +226,27 @@ th {
   text-align: left;
   padding: 8px;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #f2d9dd;
+}
+
+a:visited {
+  color: #d0a5b2;
+}
+
+a:focus {
+  color: #ffccff;
+}
+
+a:hover {
+  color: #ffb3d9;
+}
+
+a:active {
+  color: #ff99cc;
+}
