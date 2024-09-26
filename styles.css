@@ -210,19 +210,21 @@ h3 {
   background-color: #2a1963;
   height: 903px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #f2d9dd;
 }
 
 table {
   border-collapse: collapse;
   width: 80%;
-  color: white;
+  color: #f2d9dd;
 }
 
 td,
 th {
-  border: 1px solid white;
+  border: 1px solid #f2d9dd;
   text-align: left;
   padding: 8px;
 }
