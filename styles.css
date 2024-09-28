@@ -67,7 +67,7 @@ body {
   list-style: none;
 }
 
-.first-content {
+*.first-content {
   border-radius: 10px;
   height: 340px;
   background-color: #86206e;
@@ -112,7 +112,7 @@ body {
   text-align: center;
 }
 
-.description p {
+.description > p {
   width: 164px;
   font-size: 18px;
   color: #1f2937;
@@ -144,11 +144,6 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.images button {
-  background-color: #79568e;
-  border-color: #79568e;
 }
 
 .page2 p {
@@ -194,7 +189,7 @@ h3 {
   justify-content: center;
 }
 
-.lists {
+#lists {
   display: flex;
   justify-content: center;
 }
@@ -230,25 +225,46 @@ th {
 }
 
 a {
+  color: #e4d99c;
   text-decoration: none;
 }
 
-a:link {
-  color: #f2d9dd;
+a:hover {
+  color: #dabe60; /* Lighter gold for hover effect */
 }
 
 a:visited {
-  color: #d0a5b2;
-}
-
-a:focus {
-  color: #ffccff;
-}
-
-a:hover {
-  color: #ffb3d9;
+  color: #c0c0c0; /* Silver for visited links */
 }
 
 a:active {
+  color: #b8860b; /* Dark goldenrod for active links */
+}
+
+a[href*="wikipedia.org"] {
+  text-decoration: none;
+}
+
+a[href*="wikipedia.org"]:link {
+  color: #f2d9dd;
+}
+
+a[href*="wikipedia.org"]:visited {
+  color: #d0a5b2;
+}
+
+a[href*="wikipedia.org"]:focus {
+  color: #ffccff;
+}
+
+a[href*="wikipedia.org"]:hover {
+  color: #ffb3d9;
+}
+
+a[href*="wikipedia.org"]:active {
   color: #ff99cc;
+}
+
+img + p {
+  width: 404px;
 }
