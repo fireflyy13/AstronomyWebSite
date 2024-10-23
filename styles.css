@@ -31,30 +31,30 @@ header {
 
 nav {
   display: flex;
-  flex-grow: 1; /* Дозволяє навігації займати доступний простір */
+  flex-grow: 1;
   justify-content: flex-end;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px; /* Можна регулювати для зменшення відстані */
+  gap: 20px;
   margin: 0;
   padding: 0;
-  flex-grow: 1; /* Дозволяє списку займати доступний простір */
+  flex-grow: 1;
 }
 
 nav ul li {
   line-height: 50px;
-  flex-grow: 1; /* Дозволяє елементам списку рости */
-  text-align: center; /* Центрує текст у елементах списку */
+  flex-grow: 1;
+  text-align: center;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
-  width: 100%; /* Дозволяє посиланням заповнювати елемент списку */
-  display: block; /* Робить посилання блочними для зручності натискання */
+  width: 100%;
+  display: block;
 }
 
 header li {
@@ -96,7 +96,7 @@ header li {
 }
 
 .text-f-content {
-  flex: 1 1 50%; /* Встановлює, щоб текст займав половину доступного місця */
+  flex: 1 1 50%;
   padding: 10px;
   width: 100%;
   display: flex;
@@ -107,18 +107,18 @@ header li {
 
 .text-f-content p {
   margin: 0;
-  overflow-wrap: break-word; /* Довгі слова переносяться */
+  overflow-wrap: break-word;
 }
 
 .first-space {
-  width: 80%; /* Center content with margin auto */
+  width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 50px;
   padding-left: 10px;
-  padding-right: 10px; /* Padding instead of margin for inner spacing */
+  padding-right: 10px;
 }
 
 .first-content > div {
@@ -300,15 +300,15 @@ a {
 }
 
 a:hover {
-  color: #dabe60; /* Lighter gold for hover effect */
+  color: #dabe60;
 }
 
 a:visited {
-  color: #c0c0c0; /* Silver for visited links */
+  color: #c0c0c0;
 }
 
 a:active {
-  color: #b8860b; /* Dark goldenrod for active links */
+  color: #b8860b;
 }
 
 a[href*="wikipedia.org"] {
