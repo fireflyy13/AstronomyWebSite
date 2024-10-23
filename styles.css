@@ -1,67 +1,66 @@
 * {
   font-family: "Alkalami", sans-serif;
+  box-sizing: border-box;
 }
 
 .page1 {
   background-color: #79568e;
-  height: 903px;
+  min-height: 903px;
 }
 
 .page2 {
-  height: 903px;
+  min-height: 903px;
   background-color: #47285b;
 }
 
 .page3 {
-  height: 903px;
+  min-height: 903px;
   background-color: #394955;
 }
 
 header {
-  width: 1475px;
+  width: 100%;
   background-color: #47285b;
   height: 50px;
-  border-radius: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
+  overflow: hidden;
 }
 
 nav {
   display: flex;
-  flex-direction: row;
-  justify-content: end;
+  flex-grow: 1; /* Дозволяє навігації займати доступний простір */
+  justify-content: flex-end;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 20px; /* Можна регулювати для зменшення відстані */
   margin: 0;
   padding: 0;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 160px;
-  margin: 0;
-  padding: 0;
+  flex-grow: 1; /* Дозволяє списку займати доступний простір */
 }
 
 nav ul li {
-  display: inline;
   line-height: 50px;
+  flex-grow: 1; /* Дозволяє елементам списку рости */
+  text-align: center; /* Центрує текст у елементах списку */
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
+  width: 100%; /* Дозволяє посиланням заповнювати елемент списку */
+  display: block; /* Робить посилання блочними для зручності натискання */
 }
 
 header li {
   height: 40px;
 }
+
 /* 
 .header-content li {
   width: 191px;
@@ -79,21 +78,50 @@ header li {
 
 *.first-content {
   border-radius: 10px;
-  height: 340px;
+
   background-color: #86206e;
-  width: 1108px;
+
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   color: #f2d9dd;
-  box-shadow: 8px 8px 15px #1c1141;
   box-shadow: inset 0px 0px 40px 40px #2a1963;
+  flex-wrap: wrap;
+  padding: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 30px auto;
+  min-width: 300px;
+}
+
+.text-f-content {
+  flex: 1 1 50%; /* Встановлює, щоб текст займав половину доступного місця */
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.text-f-content p {
+  margin: 0;
+  overflow-wrap: break-word; /* Довгі слова переносяться */
 }
 
 .first-space {
-  /* background-color: red; */
-  height: 444px;
+  width: 80%; /* Center content with margin auto */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px; /* Padding instead of margin for inner spacing */
+}
+
+.first-content > div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,12 +131,20 @@ header li {
   display: flex;
   justify-content: center;
   gap: 140px;
+  flex-wrap: wrap;
+  margin-top: 100px;
 }
 
 .images img {
   border-radius: 5px;
   width: 164px;
   height: 164px;
+}
+
+.images p {
+  width: 164px;
+  text-align: center;
+  margin: 0px;
 }
 
 .description {
@@ -128,15 +164,15 @@ header li {
 
 input {
   height: 50px;
-  width: 923px;
+  flex: 1 1 80%;
+  max-width: 923px;
+  min-width: 300px;
   background-color: #fffade;
   opacity: 0.6;
   border-radius: 10px;
   box-shadow: 8px 8px 15px #513a5f;
   font-family: "Alkalami", sans-serif;
   font-size: 18px;
-  display: flex;
-  align-items: center;
   border: none;
   background-size: 35px 35px;
   background-image: url("images/magnifying-glass.png");
@@ -147,18 +183,27 @@ input {
 }
 
 .search-content {
-  height: 100px;
-  /* background-color: red; */
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+form.search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .page2 p {
-  width: 560px;
-  height: 324px;
+  width: 100%;
+  max-width: 560px;
+  height: auto;
   font-size: 18px;
   margin: 0px;
+  overflow-wrap: break-word;
 }
 
 .page2 {
@@ -166,7 +211,7 @@ input {
   flex-direction: row;
   justify-content: space-evenly;
   color: #f2d9dd;
-  /* align-items: center; */
+  flex-wrap: wrap;
 }
 
 .first-scientist,
@@ -175,6 +220,10 @@ input {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
+  flex: 1 1 20%;
+  box-sizing: border-box;
+  margin: 20px;
 }
 
 .page3 h1,
@@ -207,21 +256,24 @@ h3 {
   align-items: center;
   justify-content: center;
   height: 100px;
+  text-align: center;
 }
 
 .page4 {
   background-color: #2a1963;
-  height: 903px;
+  min-height: 903px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #f2d9dd;
+  text-align: center;
 }
 
 table {
   border-collapse: collapse;
   width: 80%;
+  max-width: 800px;
   color: #f2d9dd;
 }
 
@@ -230,6 +282,16 @@ th {
   border: 1px solid #f2d9dd;
   text-align: left;
   padding: 8px;
+  word-wrap: break-word;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #2a1963;
 }
 
 a {
@@ -275,4 +337,12 @@ a[href*="wikipedia.org"]:active {
 
 img + p {
   width: 404px;
+}
+
+@media (max-width: 1400px) {
+  .first-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

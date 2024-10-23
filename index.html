@@ -14,7 +14,7 @@
           <li
             class="logo"
             style="
-              width: 191px;
+              max-width: 191px;
               height: 25px;
               font-size: 18px;
               text-align: center;
@@ -54,7 +54,7 @@
       <div class="page1">
         <div class="first-space">
           <div class="first-content">
-            <div>
+            <div class="text-f-content">
               <p style="width: 554px; font-size: 18px">
                 Lorem ipsum odor amet, consectetuer adipiscing elit. Aptent dui
                 aptent diam turpis cras fames habitasse rhoncus. Tristique a
@@ -66,13 +66,13 @@
                 hendrerit.
               </p>
             </div>
-            <div>
+            <div style="display: flex; justify-content: center">
               <img
                 src="images/pexels-felixmittermeier-957040.jpg"
                 style="
-                  height: 318px;
-                  width: 432px;
-                  height: 260px;
+                  height: auto;
+                  width: 80%;
+                  max-width: 432px;
                   border-radius: 5px;
                   box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
                 "
@@ -82,18 +82,25 @@
         </div>
 
         <section class="images">
-          <img src="images/earth-blue-planet-globe-planet-41953.jpeg" />
-          <img src="images/sun-fireball-solar-flare-sunlight-87611.jpeg" />
-          <img src="images/free-photo-of-barred-spiral-andromeda-galaxy.jpeg" />
-          <img src="images/pexels-pixabay-47367.jpg" />
+          <div class="img-desc">
+            <img src="images/earth-blue-planet-globe-planet-41953.jpeg" />
+            <p>See recent data on planets</p>
+          </div>
+          <div class="img-desc">
+            <img src="images/sun-fireball-solar-flare-sunlight-87611.jpeg" />
+            <p>See recent data on stars</p>
+          </div>
+          <div class="img-desc">
+            <img
+              src="images/free-photo-of-barred-spiral-andromeda-galaxy.jpeg"
+            />
+            <p>See recent data on galaxies</p>
+          </div>
+          <div class="img-desc">
+            <img src="images/pexels-pixabay-47367.jpg" />
+            <p>See recent data on moons</p>
+          </div>
         </section>
-
-        <div class="description">
-          <p>See recent data on planets</p>
-          <p>See recent data on stars</p>
-          <p>See recent data on galaxies</p>
-          <p>See recent data on moons</p>
-        </div>
 
         <div class="search-content">
           <form class="search" method="get" action="">
@@ -104,7 +111,7 @@
 
       <div class="page2">
         <div class="first-scientist">
-          <p>
+          <p style="margin-bottom: 20px">
             Lorem ipsum odor amet, consectetuer adipiscing elit. Aptent dui
             aptent diam turpis cras fames habitasse rhoncus. Tristique a tempor
             habitasse ultrices euismod est. Magna sagittis aenean nullam cubilia
@@ -117,16 +124,16 @@
           </p>
           <img
             src="images/free-photo-of-a-statue-of-a-man-holding-a-book-in-front-of-a-brick-building.jpeg"
-            style="height: 375px; width: 562px"
+            style="height: auto; width: 80%; max-width: 562px"
           />
         </div>
 
         <div class="second-scientist">
           <img
             src="images/pexels-marketinconmartin-5551476.jpg"
-            style="height: 432px; width: 404px"
+            style="height: auto; width: 80%; max-width: 404px"
           />
-          <p style="width: 404px">
+          <p style="margin-top: 20px">
             Lorem ipsum odor amet, consectetuer adipiscing elit. Aptent dui
             aptent diam turpis cras fames habitasse rhoncus. Tristique a tempor
             habitasse ultrices euismod est. Magna sagittis aenean nullam cubilia
