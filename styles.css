@@ -473,3 +473,18 @@ img + p {
     min-height: 600px;
   }
 }
+
+.planets p {
+  width: 900px;
+  font-family: "Alkalami", sans-serif;
+  font-size: 18px;
+}
+
+.planets {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  align-items: center;
+  color: #f2d9dd;
+}
